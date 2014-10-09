@@ -1,0 +1,22 @@
+extends layout
+
+block metaTags
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+block cssFiles
+    each pckg, i in cssFiles.cssFiles
+        each include, j in pckg.includes
+            link(rel='stylesheet', href = include)
+    link(rel='stylesheet', href='stylesheets/remote-style.css')
+
+block content
+    ul.pager
+        li
+            a#prev(href='javascript:void(0)', title='PREV') PREVIOUS
+            input#page-number(type='number', size=4, maxlength=4)
+            a#next(href='javascript:void(0)', title='NEXT') NEXT
+
+block jsFiles
+    script(src = 'components/deck.js/jquery.min.js')
+    script(src = 'javascripts/remote.js')

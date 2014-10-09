@@ -1,0 +1,19 @@
+extends layout
+
+block cssFiles
+    each pckg, i in cssFiles.cssFiles
+        each include, j in pckg.includes
+            link(rel='stylesheet', href = include)
+
+block initialJsFiles
+    each pckg, i in initialJsFiles
+        each include, j in pckg.includes
+            script(src = include)
+
+block content
+    include presentation_content
+
+block jsFiles
+    each pckg, i in jsFiles
+        each include, j in pckg.includes
+            script(src = include)
