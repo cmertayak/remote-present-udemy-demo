@@ -1,0 +1,20 @@
+{
+  "name": "remote-present",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cmertayak/remote-present-udemy-demo",
+  "authors": [
+    "Cuneyt Mertayak <cmertayak@gmail.com>"
+  ],
+  "description": "Udemy Web Socket Demo",
+  "keywords": [
+    "Udemy",
+    "web-socket",
+    "demo"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "deck.js": "~1.1.0",
+    "jquery.js": "~2.1.1"
+  }
+}
